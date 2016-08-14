@@ -1,21 +1,26 @@
 package random.example.com.randomdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.bumptech.glide.DrawableRequestBuilder;
+import com.bumptech.glide.Glide;
 import com.hanks.htextview.HTextView;
 import com.hanks.htextview.HTextViewType;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private HTextView hTextView;
 
     private TextView textMessage;
+
+    private ImageView imageView;
 
     private boolean isStart = false;
 
@@ -42,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
     private int count = 0;
 
-    private String[] food = {"红烧","小碗菜","水煮肉","豆浆油条","烤冷面","麻辣香锅","生煎大排"};
+    private String[] foodName;
+
+    private String[] imgURL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +61,11 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         hTextView = (HTextView) findViewById(R.id.text);
         textMessage = (TextView) findViewById(R.id.text_tag);
+        imageView = (ImageView) findViewById(R.id.profile_image);
         hTextView.setAnimateType(HTextViewType.SCALE);
         hTextView.animateText("该吃啥");
+        foodName = getResources().getStringArray(R.array.foodName);
+        imgURL = getResources().getStringArray(R.array.imgURL);
         choose = (FloatingActionButton) findViewById(R.id.fab_start);
         add = (FloatingActionButton) findViewById(R.id.fab_add);
         choose.setOnClickListener(new View.OnClickListener() {
@@ -61,8 +73,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 isStart = !isStart;
                 if (isStart == false) {
+                    Log.d(TAG,String.valueOf(eat));
+                    DrawableRequestBuilder<Integer> thumbnailRequest = Glide
+                            .with(MainActivity.this)
+                            .load(R.mipmap.wait);
+                    Glide.with(MainActivity.this)
+                            .load(imgURL[eat])
+                            .thumbnail(thumbnailRequest)
+                            .into(imageView);
                     textMessage.setText("满意则添加，不满意可再次选择");
+                    hTextView.animateText(foodName[eat]);
                     hTextView.setAnimateType(HTextViewType.LINE);
+
                 } else {
                     count ++;
                     textMessage.setText("点击左边按钮停止");
@@ -79,9 +101,9 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (eat!=-1 && isAlreadyChoose == false) {
+                if (isAlreadyChoose == false && eat!=-1) {
                     isAlreadyChoose = true;
-                    CharSequence str = "你已选择"+food[eat]+",已添加";
+                    CharSequence str = "你已选择"+foodName[eat]+",已添加";
                     Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();
                 } else if (eat == -1){
                     CharSequence str = "请先点击开始按钮选择后才可添加";
@@ -99,7 +121,9 @@ public class MainActivity extends AppCompatActivity {
                 switch (msg.what) {
                     case INFO:
                         String str = msg.obj.toString();
-                        hTextView.animateText(str);
+                        eat = Integer.parseInt(str);
+                        if (isStart)
+                            hTextView.animateText(foodName[eat]);
                         break;
                     default:
                         break;
@@ -116,16 +140,16 @@ public class MainActivity extends AppCompatActivity {
         thread = new Thread() {
             @Override
             public void run() {
+                Random random = new Random();
                 while (true) {
                     try {
                         while (isStart) {
-                            Thread.sleep(300);
-                            eat ++;
+                            Thread.sleep(100);
+                            int choose = random.nextInt(100);
                             Message message = new Message();
                             message.what = INFO;
-                            message.obj = food[eat];
+                            message.obj = choose;
                             handler.sendMessage(message);
-                            if (eat ==6) eat =0;
                         }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -146,6 +170,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(MainActivity.this,ListActivity.class);
+            startActivity(intent);
             return true;
         }
 

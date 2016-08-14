@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="foodName">
+        <item>炒青菜 </item>
+        <item>番茄炒蛋 </item>
+        <item>炒空心菜 </item>
+        <item>绿豆汤 </item>
+        <item>素炒小白菜 </item>
+        <item>白粥（米：水=1：10） </item>
+        <item>蜂蜜柠檬水 </item>
+        <item>烧茄子 </item>
+        <item>绿豆粥 </item>
+        <item>杂粮粥 </item>
+        <item>蛋炒饭 </item>
+        <item>黑米粥 </item>
+        <item>红烧鳓鱼 </item>
+        <item>盐水虾 </item>
+        <item>煎鸡蛋 </item>
+        <item>炒绿豆芽 </item>
+        <item>炒白菜（油腻版） </item>
+        <item>葱油饼 </item>
+        <item>清炒西葫芦 </item>
+        <item>酸辣土豆丝 </item>
+        <item>红烧肉 </item>
+        <item>韭菜包子 </item>
+        <item>鸡蛋饼 </item>
+        <item>卤鸡蛋 </item>
+        <item>清炒土豆丝 </item>
+        <item>素炒白花藕 </item>
+        <item>清爽西兰花 </item>
+        <item>烧卖 </item>
+        <item>炒大白菜（清淡版） </item>
+        <item>西红柿鸡蛋汤 </item>
+        <item>大饼 </item>
+        <item>清蒸鱼 </item>
+        <item>皮蛋瘦肉粥 </item>
+        <item>鲜肉小馄饨 </item>
+        <item>酸菜鱼 </item>
+        <item>红豆粥 </item>
+        <item>寿司 自制1 </item>
+        <item>麻婆豆腐 </item>
+        <item>蒸南瓜 </item>
+        <item>芝麻烧饼 </item>
+        <item>南瓜粥 </item>
+        <item>烧包菜丝 </item>
+        <item>白菜猪肉包子 </item>
+        <item>酸辣粉 </item>
+        <item>青椒炒鸡蛋 </item>
+        <item>素炒芹菜 </item>
+        <item>自制粽子 </item>
+        <item>椒油拌海带 </item>
+        <item>烙玉米饼 </item>
+        <item>麻辣烫 </item>
+        <item>蔬菜沙拉 </item>
+        <item>清炒卷心菜 </item>
+        <item>蒜味烧茄子 </item>
+        <item>红烧大排 </item>
+        <item>杂粮煎饼 </item>
+        <item>玉米汤小米粥 </item>
+        <item>肉松面包 </item>
+        <item>豆沙包 </item>
+        <item>麻酱拌黄瓜 </item>
+        <item>清拌黄瓜 </item>
+        <item>清蒸鸡蛋羹 </item>
+        <item>红烧带鱼 </item>
+        <item>虾皮冬瓜丝 </item>
+        <item>自制珍珠奶茶 </item>
+        <item>红烧鸡块 </item>
+        <item>红卤鸡爪 </item>
+        <item>扬州蛋炒饭 </item>
+        <item>玉米面粥 </item>
+        <item>蛋挞 </item>
+        <item>炒土豆丝 </item>
+        <item>牛肉包子 </item>
+        <item>炒面/炒粉 </item>
+        <item>韭菜炒绿豆芽 </item>
+        <item>自制吐司 </item>
+        <item>千层饼 </item>
+        <item>菜煎饼 </item>
+        <item>凉拌黑木耳 </item>
+        <item>炒胡萝卜片 </item>
+        <item>杂粮粥10种以上 </item>
+        <item>清炒油麦菜 </item>
+        <item>红烧豆腐 </item>
+        <item>红烧茄子 </item>
+        <item>蒜茸海带 </item>
+        <item>烧花菜 </item>
+        <item>黄瓜炒蛋 </item>
+        <item>清蒸蛋羹 </item>
+        <item>黄瓜炒鸡蛋 </item>
+        <item>炒豇豆 </item>
+        <item>咖喱鸡块土豆 </item>
+        <item>素炒菜花 </item>
+        <item>肉片炒菜花 </item>
+        <item>青菜炒草菇 </item>
+        <item>韭菜炒鸡蛋 </item>
+        <item>五香茶蛋 </item>
+        <item>红薯粥 </item>
+        <item>丝瓜炒蛋 </item>
+        <item>肉丝茭白 </item>
+        <item>虾仁蒸肠粉 </item>
+        <item>肉片炒青椒 </item>
+        <item>家常蛋饼 </item>
+    </string-array>
+
+    <string-array name="foodMessage">
+        <item>热量：40 大卡(每100克)</item>
+        <item>热量：75 大卡(每100克)</item>
+        <item>热量：43 大卡(每100克)</item>
+        <item>热量：45 大卡(每100克)</item>
+        <item>热量：49 大卡(每100克)</item>
+        <item>热量：30 大卡(每100克)</item>
+        <item>热量：10 大卡(每100克)</item>
+        <item>热量：74 大卡(每100克)</item>
+        <item>热量：65 大卡(每100克)</item>
+        <item>热量：47 大卡(每100克)</item>
+        <item>热量：172 大卡(每100克)</item>
+        <item>热量：30 大卡(每100克)</item>
+        <item>热量：215 大卡(每100克)</item>
+        <item>热量：99 大卡(每100克)</item>
+        <item>热量：209 大卡(每100克)</item>
+        <item>热量：63 大卡(每100克)</item>
+        <item>热量：99 大卡(每100克)</item>
+        <item>热量：259 大卡(每100克)</item>
+        <item>热量：49 大卡(每100克)</item>
+        <item>热量：120 大卡(每100克)</item>
+        <item>热量：478 大卡(每100克)</item>
+        <item>热量：199 大卡(每100克)</item>
+        <item>热量：244 大卡(每100克)</item>
+        <item>热量：144 大卡(每100克)</item>
+        <item>热量：100 大卡(每100克)</item>
+        <item>热量：91 大卡(每100克)</item>
+        <item>热量：35 大卡(每100克)</item>
+        <item>热量：220 大卡(每100克)</item>
+        <item>热量：39 大卡(每100克)</item>
+        <item>热量：14 大卡(每100克)</item>
+        <item>热量：215 大卡(每100克)</item>
+        <item>热量：90 大卡(每100克)</item>
+        <item>热量：54 大卡(每100克)</item>
+        <item>热量：250 大卡(每100克)</item>
+        <item>热量：98 大卡(每100克)</item>
+        <item>热量：62 大卡(每100克)</item>
+        <item>热量：141 大卡(每100克)</item>
+        <item>热量：137 大卡(每100克)</item>
+        <item>热量：22 大卡(每100克)</item>
+        <item>热量：317 大卡(每100克)</item>
+        <item>热量：21 大卡(每100克)</item>
+        <item>热量：45 大卡(每100克)</item>
+        <item>热量：163 大卡(每100克)</item>
+        <item>热量：98 大卡(每100克)</item>
+        <item>热量：137 大卡(每100克)</item>
+        <item>热量：33 大卡(每100克)</item>
+        <item>热量：195 大卡(每100克)</item>
+        <item>热量：68 大卡(每100克)</item>
+        <item>热量：150 大卡(每100克)</item>
+        <item>热量：106 大卡(每100克)</item>
+        <item>热量：39 大卡(每100克)</item>
+        <item>热量：44 大卡(每100克)</item>
+        <item>热量：147 大卡(每100克)</item>
+        <item>热量：248 大卡(每100克)</item>
+        <item>热量：325 大卡(每100克)</item>
+        <item>热量：14 大卡(每100克)</item>
+        <item>热量：325 大卡(每100克)</item>
+        <item>热量：220 大卡(每100克)</item>
+        <item>热量：51 大卡(每100克)</item>
+        <item>热量：40 大卡(每100克)</item>
+        <item>热量：42 大卡(每100克)</item>
+        <item>热量：141 大卡(每100克)</item>
+        <item>热量：45 大卡(每100克)</item>
+        <item>热量：48 大卡(每100克)</item>
+        <item>热量：224 大卡(每100克)</item>
+        <item>热量：235 大卡(每100克)</item>
+        <item>热量：139 大卡(每100克)</item>
+        <item>热量：45 大卡(每100克)</item>
+        <item>热量：375 大卡(每100克)</item>
+        <item>热量：107 大卡(每100克)</item>
+        <item>热量：222 大卡(每100克)</item>
+        <item>热量：179 大卡(每100克)</item>
+        <item>热量：30 大卡(每100克)</item>
+        <item>热量：278 大卡(每100克)</item>
+        <item>热量：269 大卡(每100克)</item>
+        <item>热量：151 大卡(每100克)</item>
+        <item>热量：56 大卡(每100克)</item>
+        <item>热量：126 大卡(每100克)</item>
+        <item>热量：83 大卡(每100克)</item>
+        <item>热量：54 大卡(每100克)</item>
+        <item>热量：96 大卡(每100克)</item>
+        <item>热量：63 大卡(每100克)</item>
+        <item>热量：48 大卡(每100克)</item>
+        <item>热量：109 大卡(每100克)</item>
+        <item>热量：75 大卡(每100克)</item>
+        <item>热量：61 大卡(每100克)</item>
+        <item>热量：83 大卡(每100克)</item>
+        <item>热量：37 大卡(每100克)</item>
+        <item>热量：113 大卡(每100克)</item>
+        <item>热量：56 大卡(每100克)</item>
+        <item>热量：68 大卡(每100克)</item>
+        <item>热量：35 大卡(每100克)</item>
+        <item>热量：114 大卡(每100克)</item>
+        <item>热量：146 大卡(每100克)</item>
+        <item>热量：64 大卡(每100克)</item>
+        <item>热量：102 大卡(每100克)</item>
+        <item>热量：84 大卡(每100克)</item>
+        <item>热量：124 大卡(每100克)</item>
+        <item>热量：93 大卡(每100克)</item>
+        <item>热量：284 大卡(每100克)</item>
+    </string-array>
+
+    <string-array name="imgURL">
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152415465417341.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152415553514400.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201529951913020.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201521116303517125.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1165818805295_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2015241626817666.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152618365716779.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1176364593812_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2015291037211257.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152618255016996.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152618324917204.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281514261017439.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2009/2/26/user_mid_211592_1235657827.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20128151430138567.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152416205417554.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1166580929390_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2009/4/24/18896_1240579778mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281514382416971.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/12/mid_photo_url_3d8e292441844ce8b621c03cdca9194a.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152111625163185.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201521116235212760.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/7/13/96427_1215906899mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152910505018761.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/7/24/user_mid_94905_1216876756.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2015261842384677.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/12/2/mid_170271_1228227281.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/11/mid_photo_url_e76548e27a8f4793aae39f6ace4a2023.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152916453118107.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/10/18/86539_1224302114mid.gif</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2015299535717460.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2009/2/12/173965_1234400002mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281510354617402.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152910575917014.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/9/27/86539_1222482030mid.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1165819809201_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281510471617513.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201532017182216266.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20155149534910631.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20152910552218685.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201211159445914273.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201282214173017090.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281510515314324.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2015231257719837.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/7/28/mid_107189_1217205099.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/6/22/mid_77182_1214113082.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/11/mid_photo_url_293f85e5d947436fa0908d840be3d773.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281510561518953.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1166151192404_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20128151125617157.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/6/24/mid_36507_1214291800.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1166684171279_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201521116324719499.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2012815119552750.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281514502016556.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2009/5/19/129336_1242687672mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281514542617107.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20128151116519598.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281514553019104.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/6/20/mid_76228_1213922689.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2015331127243183.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1169194439400_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1161512576609_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201281515072812.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2009/8/13/310288_1250163283mid.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1161512731500_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1165808218904_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20128151119449905.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2015291651318523.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_201561517561218394.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1165825389607_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/10/8/140585_1223429854mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/10/14/129336_1223978836mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/11/mid_photo_url_1813d2a51f9f47c3ab7956e297ba67e5.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2009/3/27/75623_1238162972mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2009/4/29/267179_1240979830mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20128151545716822.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/12/mid_photo_url_a742a826252e459b9ed443b1beec16a7.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/6/21/mid_76228_1214028985.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/10/3/127674_1223006520mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20106211164615258.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/12/mid_photo_url_15a22c6a6c5e4b39a4b73acd5c15db29.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1165403412578_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/12/mid_photo_url_1f9ee1a3065d441cbda845ab227ecc14.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2009/1/4/mid_174497_1231039820.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20128919315117124.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1165299392337_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/10/28/user_mid_146292_1225166721.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20128919383117293.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1164160052312_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/12/20/user_mid_182435_1229742377.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/12/mid_photo_url_35ffccabbbc1451d87060220ed2c1335.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2016/7/12/mid_photo_url_32357777fe0548b1aefb27f89505ebeb.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1176363140578_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/6/19/mid_76228_1213886783.jpg</item>
+        <item>http://s2.boohee.cn/house/upload_food/2008/10/20/69689_1224475999mid.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1173084822970_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1170039430120_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_20153251127117145.jpg</item>
+        <item>http://s2.boohee.cn/house/menu_mid/1166684133061_mid.jpg</item>
+        <item>http://s2.boohee.cn/house/food_mid/mid_photo_2011681618018232.jpg</item>
+
+    </string-array>
+
+</resources>
