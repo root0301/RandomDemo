@@ -1,4 +1,4 @@
-package random.example.com.randomdemo;
+﻿package random.example.com.randomdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } else {
                     count ++;
+                    isAlreadyChoose = false;
                     textMessage.setText("点击左边按钮停止");
                     hTextView.setAnimateType(HTextViewType.SCALE);
                     if (count > 3) {
@@ -101,7 +102,8 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isAlreadyChoose == false && eat!=-1) {
+                Log.d(TAG,String.valueOf(isAlreadyChoose));
+                if (isStart==false && eat!=-1 && !isAlreadyChoose) {
                     isAlreadyChoose = true;
                     CharSequence str = "你已选择"+foodName[eat]+",已添加";
                     Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();
@@ -124,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                         eat = Integer.parseInt(str);
                         if (isStart)
                             hTextView.animateText(foodName[eat]);
-                        break;
+			break;
                     default:
                         break;
                 }

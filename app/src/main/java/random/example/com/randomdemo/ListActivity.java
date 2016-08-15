@@ -2,9 +2,11 @@ package random.example.com.randomdemo;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 /**
  * Created by slience on 2016/8/14.
@@ -16,22 +18,26 @@ public class ListActivity extends AppCompatActivity {
 
     private RecyclerAdapter adapter;
 
-    private String[] name;
+    private String[] name = null;
 
-    private String[] num;
+    private String[] num = null;
+
+    private String TAG = "DEBUG";
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
         initdata();
         initRecycler();
     }
 
+
     private void initdata() {
         name = getResources().getStringArray(R.array.foodName);
-        for (int i = 1; i<=name.length; i++) {
-            name[i] = String.valueOf(i);
+        num = new String[name.length];
+        for (int i = 0; i<name.length; i++) {
+            num[i] = String.valueOf(i);
         }
     }
 

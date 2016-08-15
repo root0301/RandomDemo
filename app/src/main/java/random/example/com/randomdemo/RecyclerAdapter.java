@@ -2,6 +2,7 @@ package random.example.com.randomdemo;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,11 +22,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
     private String[] num;
 
+    private String TAG = "DEBUG";
+
     public RecyclerAdapter(Context context, String[] na, String[] nu) {
         this.mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
         name = na;
         num = nu;
+        Log.d(TAG,String.valueOf(name.length));
     }
 
     @Override
