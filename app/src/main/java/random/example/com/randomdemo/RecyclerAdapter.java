@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created by slience on 2016/8/14.
  */
@@ -24,13 +27,26 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
     private String TAG = "DEBUG";
 
-    public RecyclerAdapter(Context context, String[] na, String[] nu) {
+    private Map<String,Integer> mMap;
+
+    private List<String> mList;
+
+/*    public RecyclerAdapter(Context context, String[] na, String[] nu) {
         this.mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
         name = na;
         num = nu;
         Log.d(TAG,String.valueOf(name.length));
+    }*/
+
+    public RecyclerAdapter(Context context, Map<String,Integer> map,List<String> list) {
+        this.mContext = context;
+        mLayoutInflater = LayoutInflater.from(context);
+        mMap = map;
+        mList = list;
+
     }
+
 
     @Override
     public RecyclerHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -39,13 +55,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
     @Override
     public void onBindViewHolder(RecyclerHolder holder, int position) {
-        holder.nameText.setText(name[position]);
-        holder.numText.setText(num[position]);
+/*        holder.nameText.setText(name[position]);
+        holder.numText.setText(num[position]);*/
+        holder.nameText.setText(mList.get(position));
+        holder.numText.setText(mMap.get(mList.get(position)));
     }
 
     @Override
     public int getItemCount() {
-        return name.length;
+        return mList.size();
     }
 
     public class RecyclerHolder extends RecyclerView.ViewHolder {

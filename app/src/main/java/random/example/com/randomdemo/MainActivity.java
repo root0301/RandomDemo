@@ -1,13 +1,11 @@
-﻿package random.example.com.randomdemo;
+package random.example.com.randomdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -20,6 +18,10 @@ import com.bumptech.glide.DrawableRequestBuilder;
 import com.bumptech.glide.Glide;
 import com.hanks.htextview.HTextView;
 import com.hanks.htextview.HTextViewType;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
 
     private String[] imgURL;
 
+    private Map<String,Integer> foodSet;
+
+    private List<String> transName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         hTextView = (HTextView) findViewById(R.id.text);
         textMessage = (TextView) findViewById(R.id.text_tag);
         imageView = (ImageView) findViewById(R.id.profile_image);
+        foodSet = new HashMap<String,Integer>();
+        transName = new ArrayList<String>();
         hTextView.setAnimateType(HTextViewType.SCALE);
         hTextView.animateText("该吃啥");
         foodName = getResources().getStringArray(R.array.foodName);
@@ -107,6 +115,16 @@ public class MainActivity extends AppCompatActivity {
                     isAlreadyChoose = true;
                     CharSequence str = "你已选择"+foodName[eat]+",已添加";
                     Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();
+
+                    if (transName.contains(foodName[eat])) {
+                        Log.d(TAG,"have");
+                        int num = foodSet.get(foodName[eat]);
+                        foodSet.put(foodName[eat],num+1);
+                    } else {
+                        Log.d(TAG,"HAVE");
+                        transName.add(foodName[eat]);
+                        foodSet.put(foodName[eat],1);
+                    }
                 } else if (eat == -1){
                     CharSequence str = "请先点击开始按钮选择后才可添加";
                     Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();
@@ -173,10 +191,21 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_settings) {
             Intent intent = new Intent(MainActivity.this,ListActivity.class);
+            Bundle bundle = new Bundle();
+            SerializableMap myMap=new SerializableMap();
+            SerializableList myList=new SerializableList();
+            myMap.setMap(foodSet);
+            myList.setList(transName);
+            bundle.putSerializable("map",myMap);
+            bundle.putSerializable("list",myList);
+            intent.putExtras(bundle);
             startActivity(intent);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }

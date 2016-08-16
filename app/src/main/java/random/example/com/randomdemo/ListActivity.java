@@ -8,6 +8,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created by slience on 2016/8/14.
  */
@@ -28,8 +33,15 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        initdata();
-        initRecycler();
+        //initdata();
+        Bundle bundle = getIntent().getExtras();
+        SerializableMap serializableMap = (SerializableMap)bundle.get("map");
+        SerializableList serializableList = (SerializableList)bundle.get("list");
+        Map<String,Integer> map = new HashMap<String,Integer>();
+        List<String> list = new ArrayList<String>();
+        map = serializableMap.getMap();
+        list = serializableList.getList();
+        initRecycler(map,list);
     }
 
 
@@ -41,10 +53,10 @@ public class ListActivity extends AppCompatActivity {
         }
     }
 
-    private void initRecycler() {
+    private void initRecycler(Map<String,Integer> map, List<String> list) {
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new RecyclerAdapter(this,name,num);
+        adapter = new RecyclerAdapter(this,map,list);
         recyclerView.setAdapter(adapter);
     }
 }
