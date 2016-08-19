@@ -117,11 +117,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();
 
                     if (transName.contains(foodName[eat])) {
-                        Log.d(TAG,"have");
                         int num = foodSet.get(foodName[eat]);
                         foodSet.put(foodName[eat],num+1);
                     } else {
-                        Log.d(TAG,"HAVE");
                         transName.add(foodName[eat]);
                         foodSet.put(foodName[eat],1);
                     }

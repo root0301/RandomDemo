@@ -25,7 +25,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
     private String[] num;
 
-    private String TAG = "DEBUG";
+    private String TAG = "TEST";
 
     private Map<String,Integer> mMap;
 
@@ -44,7 +44,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
         mLayoutInflater = LayoutInflater.from(context);
         mMap = map;
         mList = list;
-
+        for(int i=0;i<mList.size();i++) {
+            Log.d(TAG,mList.get(i));
+            Log.d(TAG,String.valueOf(mMap.containsKey(mList.get(i))));
+        }
     }
 
 
@@ -58,7 +61,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 /*        holder.nameText.setText(name[position]);
         holder.numText.setText(num[position]);*/
         holder.nameText.setText(mList.get(position));
-        holder.numText.setText(mMap.get(mList.get(position)));
+        int num = mMap.get(mList.get(position));
+        holder.numText.setText(String.valueOf(num));
     }
 
     @Override
